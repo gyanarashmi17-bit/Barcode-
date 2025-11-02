@@ -1,0 +1,19 @@
+{
+  "name": "sems-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "seed": "node src/seed.js",
+    "prisma:generate": "prisma generate"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "prisma": "^5.11.0",
+    "@prisma/client": "^5.11.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.0"
+  }
+}
