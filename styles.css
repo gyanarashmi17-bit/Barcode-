@@ -2,22 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body { font-family: 'Inter', system-ui, sans-serif; }
+body {
+  font-family: 'Inter', sans-serif;
+}
 
 .animated-bg {
-  background: linear-gradient(270deg, #0f172a, #1e3a8a, #2563eb, #3b82f6, #1e40af);
-  background-size: 1000% 1000%;
-  animation: gradientMove 18s ease infinite;
+  background: linear-gradient(270deg, #1e3a8a, #2563eb, #3b82f6, #1e40af);
+  background-size: 800% 800%;
+  animation: gradientMove 15s ease infinite;
 }
 
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
-
-.card-glass {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.06);
 }
